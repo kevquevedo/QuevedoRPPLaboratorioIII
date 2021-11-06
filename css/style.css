@@ -1,0 +1,105 @@
+@keyframes spin
+{
+    0% 
+    { 
+        transform: rotate(0deg); 
+    }
+    100% 
+    { 
+        transform: rotate(360deg); 
+    }
+}
+
+#divSpinner{
+    margin: auto;
+}
+
+.spinner 
+{
+  position: absolute;
+  z-index: 11;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+  border: 16px solid #147a94; 
+  border-top: 16px solid rgb(22, 9, 139); 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 500ms linear infinite;
+}
+
+#divGeneral
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+}
+
+#divTabla,
+#divTitulo
+{
+    position: relative;
+}
+
+#tabla,
+#tablaTitulo {
+    font-size: 20px;
+    background: whitesmoke ;
+    width: 650px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    margin: 20px;
+}
+
+#header{
+    background: rgb(88, 238, 188);
+    border-color: black;
+    border-style:solid;
+    border-width: 0.2em;
+}
+
+#divModificarMateria
+{ 
+    font-weight: bold;
+    background-color: whitesmoke ;
+    border-color: black;
+    border-style: solid;
+    padding: 1.2rem;
+    width: 25%;
+    height: 40%;
+    text-align: left;
+    border-style: solid;
+    border-radius: 1rem; 
+    align-items: center;
+    justify-content:center;
+}
+
+#btnCerrar
+{
+    background-color: red;
+}
+
+#btnLocalidades
+{
+    background-color: rgb(88, 238, 188);
+    justify-content:center;
+    align-items:center;
+}
+
+#btnModificar
+{
+    background-color: rgb(88, 238, 188);
+}
+
+#btnEliminar
+{
+    background-color: red;
+}
+
+

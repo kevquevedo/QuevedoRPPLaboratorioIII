@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>RPP - Kevin Quevedo</title>
+</head>
+<body>
+
+    <!--DIV TABLA Y SPINNER-->
+    <div id="divGeneral">
+        <!--DIV DE SPINNER-->
+        <div id="divSpinner" class="spinner" hidden>
+        </div>
+
+        <!--DIV DEL TITULO DE LA TABLA-->
+        <div id="divTitulo">
+            <table id="tablaTitulo">
+                <tr  id="header"> 
+                    <th>Nombre</th>
+                    <th>Cuatrimestre</th>
+                    <th>Fecha de Final</th>
+                    <th>Turno</th>
+                </tr>
+            </table>
+            <!--DIV DE TABLA DE PERSONAS-->
+            <div id="divTabla">
+
+            </div> 
+        </div>        
+    </div>
+    <br>
+    <br>
+    <!--DIV DE MODIFICAR SECCION-->
+    <div id="divModificarMateria" hidden class="content-modal">
+
+        <!--Seccion Nombre.-->
+        <label for="txtNombre">Nombre</label>
+        <input type="text" name="txtNombre" id="txtNombre">
+        <br>
+        <br>
+        <!--Seccion Cuatrimestre.-->
+        <label for="txtCuatrimestre">Cuatrimestre</label>
+        <select id="sel_cuatrimestre"></select>
+        <br>
+        <br>
+        <!--Seccion Turno.-->    
+        <label for="radioTurno">Turno</label>
+        <br>
+        <input type="radio" name="radioTurno" id="mañana" value="Mañana">
+        <label for="turno">Mañana</label>
+        <br>
+        <input type="radio" name="radioTurno" id="noche" value="Noche">
+        <label for="turno">Noche</label>
+        <br>
+        <br>
+        <!--Seccion Fecha de Final.-->
+        <label for="txtFechaFinal">Fecha de Final</label>
+        <input type="date" name="dateFechaFinal" id="dateFechaFinal">
+        <br>
+        <br>
+        <!--Boton Modificar.-->
+        <input type="button" value="Modificar" id="btnModificar" class="btnModificar">
+        <!--Boton Eliminar.-->
+        <input type="button" value="Eliminar" id="btnEliminar" class="btnEliminar">
+    </div>
+    <br>
+    <br>
+
+</body>
+</html>
